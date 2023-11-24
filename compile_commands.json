@@ -1,0 +1,40 @@
+[
+  {
+    "arguments": [
+      "/opt/homebrew/Cellar/llvm@14/14.0.6/bin/clang++",
+      "-std=c++20",
+      "-Wall",
+      "-Wextra",
+      "-pedantic",
+      "-Wshadow",
+      "-I",
+      "/usr/local/include",
+      "-c",
+      "-o",
+      "obj/main.o",
+      "src/main.cpp"
+    ],
+    "directory": "/Users/anthony/Desktop/SDL-3D",
+    "file": "/Users/anthony/Desktop/SDL-3D/src/main.cpp",
+    "output": "/Users/anthony/Desktop/SDL-3D/obj/main.o"
+  },
+  {
+    "arguments": [
+      "/opt/homebrew/Cellar/llvm@14/14.0.6/bin/clang++",
+      "-std=c++20",
+      "-Wall",
+      "-Wextra",
+      "-pedantic",
+      "-Wshadow",
+      "-I",
+      "/usr/local/include",
+      "-c",
+      "-o",
+      "obj/window.o",
+      "src/window.cpp"
+    ],
+    "directory": "/Users/anthony/Desktop/SDL-3D",
+    "file": "/Users/anthony/Desktop/SDL-3D/src/window.cpp",
+    "output": "/Users/anthony/Desktop/SDL-3D/obj/window.o"
+  }
+]
