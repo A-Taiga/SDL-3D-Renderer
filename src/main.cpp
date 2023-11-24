@@ -5,11 +5,9 @@
 #include <iostream>
 #include "SDL2/SDL_timer.h"
 
-
 SDL_Color color_select(const char* arg);
-int main([[gnu::unused]]int argc, char* argv[])
+int main(int argc, char* argv[])
 {
-
 	SDL_Color color = {};
 	std::string file = "mesh-files/";
 
@@ -18,7 +16,6 @@ int main([[gnu::unused]]int argc, char* argv[])
 		std::cout << "Required object file input or color input" << std::endl;
 		std::exit(EXIT_FAILURE);
 	}	
-
 
 	file += argv[1];
 
