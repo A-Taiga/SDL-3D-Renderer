@@ -17,7 +17,7 @@ int main([[gnu::unused]]int argc, char* argv[])
 	}
 
 
-	std::string file = "object-files/";
+	std::string file = "mesh-files/";
 	file += argv[1];
 
 
