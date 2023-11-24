@@ -1,2 +1,4 @@
 .cache
 sdl-3D
+.DS_Store
+/object-files
