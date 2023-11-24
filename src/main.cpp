@@ -2,22 +2,11 @@
 #include "SDL2/SDL_stdinc.h"
 #include "window.hpp"
 #include "shapes.hpp"
-#include <cstddef>
-#include <cstdlib>
 #include <iostream>
 #include "SDL2/SDL_timer.h"
 
 
-SDL_Color color_select(const char* arg)
-{
-	if(!strcmp(arg,"WHITE"))		return {WHITE};
-	else if(!strcmp(arg,"RED"))		return {RED};
-	else if(!strcmp(arg,"CYAN"))	return {CYAN};
-	else if(!strcmp(arg,"GREEN"))	return {GREEN};
-	else if(!strcmp(arg,"PINK"))	return {PINK};
-	else 							return {WHITE};
-}
-
+SDL_Color color_select(const char* arg);
 int main([[gnu::unused]]int argc, char* argv[])
 {
 
@@ -70,4 +59,14 @@ int main([[gnu::unused]]int argc, char* argv[])
 
 	}
 	return 0;
+}
+
+SDL_Color color_select(const char* arg)
+{
+	if(!strcmp(arg,"WHITE"))		return {WHITE};
+	else if(!strcmp(arg,"RED"))		return {RED};
+	else if(!strcmp(arg,"CYAN"))	return {CYAN};
+	else if(!strcmp(arg,"GREEN"))	return {GREEN};
+	else if(!strcmp(arg,"PINK"))	return {PINK};
+	else 							return {WHITE};
 }
