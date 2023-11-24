@@ -30,7 +30,7 @@ int main([[gnu::unused]]int argc, char* argv[])
 	Uint64 end;
 	float elapsedMS;
 
-	Shape3D gun(300,300,0,50,50,window.get_renderer(), file.c_str());
+	Shape3D obj(300,300,0,50,50,window.get_renderer(), file.c_str());
 
 	float x = 0.f;
 	float y = 0.f;
@@ -40,9 +40,9 @@ int main([[gnu::unused]]int argc, char* argv[])
 	{
 		start = SDL_GetPerformanceCounter();
 
-		gun.set_color(LIME);
-		gun.rotate(x,y,z);
-		gun.draw();
+		obj.set_color(LIME);
+		obj.rotate(x,y,z);
+		obj.draw();
 		window.update();
 		window.poll_events(running,x,y,z);
 
