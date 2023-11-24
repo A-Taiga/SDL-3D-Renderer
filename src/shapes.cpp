@@ -160,9 +160,9 @@ void Shape3D::rotate(float alpha, float beta, float gamma)
 	rotationMatrix = m_mult(get_rz(alpha), m_mult(get_ry(beta), get_rx(gamma)));
 }
 
-void Shape3D::set_color(Uint8 r, Uint8 g, Uint8 b, Uint8 a)
+void Shape3D::set_color(const SDL_Color& c)
 {
-	SDL_SetRenderDrawColor(*renderer, r, g, b, a);
+	SDL_SetRenderDrawColor(*renderer, c.r, c.g, c.b, c.a);
 }
 
 

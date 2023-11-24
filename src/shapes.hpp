@@ -8,7 +8,7 @@
 #define WHITE 255,255,255,0
 #define RED 255,0,0,0
 #define CYAN 0,255,255,0
-#define LIME 0,255,0,0
+#define GREEN 0,255,0,0
 #define PINK 255,0,255,0
 #define BLACK 0,0,0,0
 
@@ -74,7 +74,8 @@ class Shape3D
 	Shape3D(float _x, float _y, float _z, int _width, int _height, std::shared_ptr<SDL_Renderer*> _renderer, const char* fileName);
 	void draw();
 	void rotate(float alpha, float beta, float gamma);
-	void set_color(Uint8 r, Uint8 g, Uint8 b, Uint8 a);
+	void set_color(const SDL_Color& c);
+	
 };
 
 #endif
