@@ -8,8 +8,16 @@
 SDL_Color color_select(const char* arg);
 int main(int argc, char* argv[])
 {
+
+	bool running = true;
+	Uint64 start;
+	Uint64 end;
+	float elapsedMS;
 	SDL_Color color = {};
 	std::string file = "mesh-files/";
+	float x = 0.f;
+	float y = 0.f;
+	float z = 0.f;
 
 	if(argc < 3)
 	{
@@ -18,24 +26,14 @@ int main(int argc, char* argv[])
 	}	
 
 	file += argv[1];
-
 	color = color_select(argv[2]);
+
 	std::cout << file << std::endl;
-
-
 	printf("%d, %d, %d, %d\n",color.r,color.g,color.b,color.a);
 
 	Window window(600,600);
-	bool running = true;
-	Uint64 start;
-	Uint64 end;
-	float elapsedMS;
-
 	Shape3D obj(300,300,0,50,50,window.get_renderer(), file.c_str());
 
-	float x = 0.f;
-	float y = 0.f;
-	float z = 0.f;
 
 	while(running)
 	{
@@ -53,7 +51,6 @@ int main(int argc, char* argv[])
 		
 		// Cap to 60 FPS
 		SDL_Delay(floor(16.666f - elapsedMS));
-
 	}
 	return 0;
 }
