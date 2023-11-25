@@ -48,12 +48,12 @@ void Window::poll_events(bool& running, float& x, float& y, float& z)
 				switch(event.key.keysym.scancode)
 				{
 
-					case SDL_SCANCODE_LEFT:	 y = -0.05;	break; // left
-					case SDL_SCANCODE_RIGHT: y = 0.05;	break; // right
-					case SDL_SCANCODE_UP:	 x = 0.05;	break; // up
-					case SDL_SCANCODE_DOWN:	 x = -0.05;	break; // down
-					case SDL_SCANCODE_A:	 z = -0.05;	break; //a
-					case SDL_SCANCODE_D:	 z = 0.05;	break; //d
+					case SDL_SCANCODE_A:	 y = -0.05;	break; // left
+					case SDL_SCANCODE_D: y = 0.05;	break; // right
+					case SDL_SCANCODE_W:	 x = 0.05;	break; // up
+					case SDL_SCANCODE_S:	 x = -0.05;	break; // down
+					case SDL_SCANCODE_Q:	 z = -0.05;	break; //a
+					case SDL_SCANCODE_E:	 z = 0.05;	break; //d
 
 					default: break;
 				}
@@ -62,12 +62,12 @@ void Window::poll_events(bool& running, float& x, float& y, float& z)
 			case SDL_KEYUP:
 				switch(event.key.keysym.scancode)
 				{
-					case SDL_SCANCODE_LEFT:
-					case SDL_SCANCODE_RIGHT:	y = 0; break;
-					case SDL_SCANCODE_UP:
-					case SDL_SCANCODE_DOWN:		x = 0; break;
 					case SDL_SCANCODE_A:
-					case SDL_SCANCODE_D:		z = 0; break;
+					case SDL_SCANCODE_D:	y = 0; break;
+					case SDL_SCANCODE_W:
+					case SDL_SCANCODE_S:		x = 0; break;
+					case SDL_SCANCODE_Q:
+					case SDL_SCANCODE_E:		z = 0; break;
 
 					default: break;
 				}
