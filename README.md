@@ -22,15 +22,3 @@ Conrtols:
 
 Input consist of the filename, color, width, and height\
 Example input: ./sdl-3D gun.obj GREEN 50 50
-
-
-https://github.com/A-Taiga/SDL-3D-Renderer/assets/64714887/557a5914-7641-4801-aa28-ae90a9a3f3e2
-
-
-
-https://github.com/A-Taiga/SDL-3D-Renderer/assets/64714887/9d2260c0-609e-4083-9e1d-def72d6355f6
-
-
-
-https://github.com/A-Taiga/SDL-3D-Renderer/assets/64714887/628b975d-033c-4895-a207-aa9da9d07d98
-
