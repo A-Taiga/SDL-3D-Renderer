@@ -13,10 +13,12 @@ Available colors:
 - PINK
 
 Conrtols:
-- left
-- right
+- W
 - A
+- S
 - D
+- Q
+- E
 
 Input consist of the filename, color, width, and height\
 Example input: ./sdl-3D gun.obj GREEN 50 50
