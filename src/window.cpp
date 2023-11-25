@@ -54,6 +54,7 @@ void Window::poll_events(bool& running, float& x, float& y, float& z)
 					case SDL_SCANCODE_DOWN:	 x = -0.05;	break; // down
 					case SDL_SCANCODE_A:	 z = -0.05;	break; //a
 					case SDL_SCANCODE_D:	 z = 0.05;	break; //d
+
 					default: break;
 				}
 				// key_code(event.key);

@@ -69,6 +69,17 @@ Shape3D::Shape3D(float _x, float _y, float _z, int _width, int _height, std::sha
 		p.t[2].z = (float)width * p.t[2].z + z;
 	}
 }
+Shape3D::Shape3D(float _x, float _y, float _z, int _width, int _height, std::shared_ptr<SDL_Renderer*> _renderer)
+: renderer(_renderer)
+, x(_x)
+, y(_y)
+, z(_z)
+, width(_width)
+, height(_height)
+{
+
+}
+
 Matrix Shape3D::get_rx(float angle)
 {
 	return 
@@ -164,5 +175,3 @@ void Shape3D::set_color(const SDL_Color& c)
 {
 	SDL_SetRenderDrawColor(*renderer, c.r, c.g, c.b, c.a);
 }
-
-

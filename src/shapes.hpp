@@ -56,7 +56,7 @@ struct Mesh
 
 class Shape3D
 {
-	private:
+	protected:
 	std::shared_ptr<SDL_Renderer*> renderer;
 	float x,y,z;
 	float width, height;
@@ -72,6 +72,8 @@ class Shape3D
 
 	public:
 	Shape3D(float _x, float _y, float _z, int _width, int _height, std::shared_ptr<SDL_Renderer*> _renderer, const char* fileName);
+	Shape3D(float _x, float _y, float _z, int _width, int _height, std::shared_ptr<SDL_Renderer*> _renderer);
+
 	void draw();
 	void rotate(float alpha, float beta, float gamma);
 	void set_color(const SDL_Color& c);
