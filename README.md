@@ -1,5 +1,5 @@
 
-https://github.com/A-Taiga/SDL-3D-Renderer/assets/64714887/5ce21779-939c-4ffe-a272-e05b3489465a
+
 # SDL-3D-Renderer
 Reads obj files in mesh-files folder and renders them in 3D.\
 Rotations are obtained using the following rotation matrices:\
