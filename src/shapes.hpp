@@ -1,5 +1,5 @@
-#ifndef CUBE_HPP
-#define CUBE_HPP
+#ifndef SHAPES_HPP
+#define SHAPES_HPP
 #include "SDL2/SDL_pixels.h"
 #include "SDL2/SDL_render.h"
 #include <memory>
