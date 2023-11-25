@@ -14,19 +14,11 @@
 
 typedef std::vector<std::vector<float>> Matrix;
 
-
 struct Vec3
 {
 	float x,y,z;
 	Vec3():x(0),y(0),z(0){}
 	Vec3(double _x, double _y, double _z):x(_x),y(_y),z(_z){}
-};
-
-struct Edge
-{
-	size_t a,b;
-	Edge():a(0),b(0){}
-	Edge(size_t _a, size_t _b):a(_a),b(_b){}
 };
 
 struct Triangle
@@ -39,7 +31,6 @@ struct Triangle
 		t[2] = v3;
 	}
 };
-
 struct face
 {
 	int v1, v2, v3;
