@@ -43,6 +43,8 @@ void Mesh::read(std::string fileName)
 	}
 	for(auto& i : f)
 		m.emplace_back(v[i.v1-1],v[i.v2-1],v[i.v3-1]);
+
+	file.close();
 }
 
 Shape3D::Shape3D(float _x, float _y, float _z, int _width, int _height, std::shared_ptr<SDL_Renderer*> _renderer, const char* fileName)
